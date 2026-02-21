@@ -14,8 +14,10 @@ from googleapiclient.http import MediaFileUpload
 
 SCOPES = ['https://www.googleapis.com/auth/drive']
 
-EMAIL = "rutvik.Desai@smytten.com"
-APP_PASSWORD = "lvxqnkaeewugzljb"
+import os
+
+EMAIL = os.getenv("EMAIL", "rutvik.desai@smytten.com")
+APP_PASSWORD = os.getenv("APP_PASSWORD", "lvxqnkaeewugzljb")
 
 FORWARD_TO = [
     "",
