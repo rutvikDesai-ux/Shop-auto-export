@@ -22,7 +22,7 @@ APP_PASSWORD = os.getenv("APP_PASSWORD", "lvxqnkaeewugzljb")
 FORWARD_TO = [
     "",
     "rutvik.desai@smytten.com",
-    "promotions@smytten.com",
+    "",
     ""
 ]
 
@@ -126,3 +126,4 @@ for uid in messages:
 
 mail.logout()
 print("All tasks completed successfully.")
+
